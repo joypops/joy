@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: 'Trebuchet MS';
+       }
+       .sec_1{
+        height: 100vh;
+        background-image: url(./img/shahin-khalaji-qTMRoHOHu0U-unsplash.jpg);
+        background-size: cover;
+        background-position: top;
+       }
+       .my_name{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        color: white;
+        font-family: cursive;
+        font-size: 1.1em;
+       }
+       nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+       }
+       nav ul{
+        display: flex;
+        gap: 2.2em;
+       }
+       nav ul li a{
+        font-size: 1.3em;
+        color: white;
+        padding: 16px;
+       }
+       .sec_1 h1{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        color: #fff;
+        font-family: Georgia;
+        font-size: 1.6em;
+        height: 300px;
+        align-items: center;
+       }
+       .sec_1_imgs{
+        height: 100vh;
+        border: 10px double red;
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        background-size: cover;
+       }
+       .img{
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+       }
+       .img-1{
+        background: url(./img/christopher-campbell-h9Rx3zOYZws-unsplash.jpg);
+       }
+       .img-2{
+        background: url(./img/mohammad-metri-U1ytD7WJvy0-unsplash.jpg);
+       }
+       .img-3{
+        background: url(./img/toa-heftiba-6M3LZsXu4FU-unsplash.jpg);
+       }
+       .img-3{
+        background: url(./img/wild-vibes-1RnPg7tET_s-unsplash.jpg);
+       }         
+       .main__portfolio{
+        padding: 5% 15%;
+        background-color: aliceblue;
+       }                             
+       .main__portfolio header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }     
+       .main__portfolio header p{
+        font-size: 1.5rem;
+        border-bottom: 2px solid grey;
+       }
+       .portfolio_imgs_wrapper{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 4rem 0 0;
+       }
+       .portfolio_imgs_wrapper .port{
+        width: 22%;
+        height: 350px;
+        background-size: cover;
+        background-position: center;
+       }
+       .port-1{background-image: url(./img/christopher-campbell-h9Rx3zOYZws-unsplash.jpg);
+    }
+       .port-2{background-image: url(./img/mohammad-metri-U1ytD7WJvy0-unsplash.jpg);
+    }
+       .port-3{background-image: url(./img/shahin-khalaji-qTMRoHOHu0U-unsplash.jpg);
+    }
+       .port-4{background-image: url(./img/toa-heftiba-6M3LZsXu4FU-unsplash.jpg);
+    }
+       .port-5{background-image: url(./img/wild-vibes-1RnPg7tET_s-unsplash.jpg);
+    }
+       .port-6{background-image: url(./img/christopher-campbell-h9Rx3zOYZws-unsplash.jpg);
+    }
+       .port-7{background-image: url(./img/mohammad-metri-U1ytD7WJvy0-unsplash.jpg);
+    }
+       .port-8{background-image: url(./img/shahin-khalaji-qTMRoHOHu0U-unsplash.jpg);
+    }
+    .work__together {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url(./img/toa-heftiba-6M3LZsXu4FU-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5% 0;
+    }
+    .work__together h1 {
+        font-size: 3rem;
+        margin-bottom:1em;
+        color: #fff;
+        text-transform: uppercase;
+
+    }
+    .work__together a {
+        color: #fff;
+        display: block;
+        font-size: 2.5em;
+        text-transform: capitalize;
+    }
+    footer{
+        padding: 4% 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer.footer_links{
+        display: flex;
+        gap: 3rem;
+    }
+    .footer_links a {
+        color: red;
+        font-style: 1.3em;
+        text-transform: capitalize;
+    }
+    footer p{
+        font-style: 2.2em;
+        text-transform: capitalize;
+    }
+
+    .hamburger {
+        font-size: 2em;
+        color: white;
+        display: none;
+    }
+
+
+    @media(max-width: 768px) {
+        .portfolio_imgs_wrapper .port {
+            width: 100%
+        }
+        .main__portfolio header {
+            flex-direction: column;
+        }
+        .work__together h1{
+            font-size: 1.2em;
+        }
+        .work__together a{
+            font-size: 1em;
+        }
+        footer p{
+            font-style: 1.2em;
+        }
+       
+        .footer_links{
+            flex-direction: column;
+            align-items: center;
+        }
+        .copyright{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        nav ul{
+            flex-direction: column;
+            background-color: black;
+            width: 100%;
+            position: fixed;
+            left: -100%;
+            text-align: center;
+            padding: 1.5em 0;
+            top: 50px;
+            height: 100vh;
+        }
+        nav li {
+            padding: 0.5em 0;
+        }
+        .hamburger {
+            display: block;
+        }
+
+        ul.active {
+            left: 0;
+            transition: .3s ease-in-out;
+        }
+    }
+    </style>
+</head>
+<body>
+    <section class="sec_1">
+        <nav>
+            <div class="my_name">EMMANUEL JOY</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+                <!-- <p color="white">&trianglerighteq;</p> -->
+            </div>
+        </nav>
+        <h1>Tech Is Life</h1>
+        <!-- <section class="sec_1_imgs">
+            <div class="all-imgs">
+                <div class="img img-1"></div>
+                <h3>retfyguhij</h3>
+            </div>
+            <div class="all-imgs">
+                <div class="img img-2"></div>
+                <h3>retfyguhij</h3> -->
+            <!-- </div>
+            <div class="all-imgs">
+                <div class="img img-3"></div>
+                <h3>retfyguhij</h3>
+            </div>
+            <div class="all-imgs">
+                <div class="img img-4"></div>
+                <h3>retfyguhij</h3>
+            </div>
+        </section> -->
+    </section> 
+    <div class="main__portfolio">
+    <header>
+        <h3>Joy's Porfolio</h3>
+        <p>View Porfolio</p>
+    </header>
+    <section class="portfolio_imgs_wrapper">
+    <div class="port port-1"></div>
+    <div class="port port-2"></div>
+    <div class="port port-3"></div>
+    <div class="port port-4"></div>
+    <div class="port port-5"></div>
+    <div class="port port-6"></div>
+    <div class="port port-7"></div>
+    <div class="port port-8"></div>
+</section>
+    </div>
+    <section class="work__together">
+        <h1>Let's work together</h1>
+        <a href="#">Get in touch</a>
+    </section>
+    <footer>
+        <p>Emmanuel Joy</p>
+  
+    <div class="footer_links">
+        <a href="#">Contacts</a>
+        <a href="#">portfolio</a>
+        <a href="#">about</a>
+        <a href="#">hire me</a>
+    </div>
+    <div class="copyright">
+        &copy;✨✨✨ <b>Emmanuel Joy</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, accusamus.
+    </div>
+    </footer>
+    <script>
+        let ul = document.querySelector('ul');
+        let hamburger = document.querySelector('.hamburger');
+
+        hamburger.addEventListener('click', () => {
+            ul.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
